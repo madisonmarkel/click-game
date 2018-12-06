@@ -22,7 +22,7 @@ class GameMessage extends Component {
       } else if (score !== 0 && topScore > 0) {
         newState.message = "correct";
       } else if (score === 12 && topScore === 12) {
-        newState.message = "You won!";
+        newState.message = "win";
       } else {
         newState.message = "incorrect";
       }
@@ -38,14 +38,14 @@ class GameMessage extends Component {
     // change the display message based on the message state
     renderMessage = () => {
         switch (this.state.message) {
-        case "You won!":
+        case "win":
           return "You Won!";
         case "correct":
-          return "You guessed correctly!";
+          return "Correctomundo!";
         case "incorrect":
-          return "You guessed incorrectly!";
+          return "Incorrectomundo!";
         default:
-          return "Click a character to begin!";
+          return "Only click an artist once. Good luck!";
         }
     };
 

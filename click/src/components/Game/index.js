@@ -59,6 +59,7 @@ class Game extends Component {
     gameCardClick = id => {
         let guessedCorrectly = false;
         // newData will be the data array with updated clicked properties
+        //ITEM HERE IS THE PHOTO JSON IN DATA.JSON (DATA)
         const newData = this.state.data.map(item => {
           if (item.id === id) {
             if (!item.clicked) {
