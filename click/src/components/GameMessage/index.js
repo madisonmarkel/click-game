@@ -13,7 +13,7 @@ class GameMessage extends Component {
       // will be passed into setState function
       let newState = {}
 
-      // deconstruct score and topScore from the pervious state
+      // deconstruct score and topScore from the previous state
       const {score, topScore} = prevProps
 
       // change message if user guess correclty or incorrectly

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Container from "../Container";
 import GameCard from "../GameCard";
-import Instructions from "../Instructions";
 import Header from "../Header";
 import data from "../../data";
 
@@ -76,13 +75,12 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="fadeIn">
+            <div>
                 <Header score={this.state.score} topScore = {this.state.topScore} />
-                <Instructions message={this.state.message} />
                 <Container>
                     {
                         this.state.data.map(item => (
-                            <div className="rollIn">
+                            <div>
                                 <GameCard
                                     key={item.id}
                                     id={item.id} 
