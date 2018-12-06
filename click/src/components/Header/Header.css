@@ -1,5 +1,5 @@
 .header {
-    background: red;
+    background: rgb(22, 5, 83);
     width: 100%;
     min-height: 80px;
     color: ivory;
@@ -24,10 +24,6 @@
     width: 33%;
     padding-top: 20px;
     font-family: 'Chakra Petch', sans-serif;
-}
-
-.title {
-    font-family: 'Lobster', cursive;
 }
 
 #score {

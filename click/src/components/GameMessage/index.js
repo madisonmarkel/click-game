@@ -4,7 +4,6 @@ import "./GameMessage.css";
 class GameMessage extends Component {
 
     state = {
-        animating: false,
         message: ""
     }
 
@@ -12,9 +11,7 @@ class GameMessage extends Component {
     componentDidUpdate(prevProps) {
 
       // will be passed into setState function
-      let newState = {
-        animating: true
-      }
+      let newState = {}
 
       // deconstruct score and topScore from the pervious state
       const {score, topScore} = prevProps
@@ -24,6 +21,8 @@ class GameMessage extends Component {
         newState.message = "";
       } else if (score !== 0 && topScore > 0) {
         newState.message = "correct";
+      } else if (score === 12 && topScore === 12) {
+        newState.message = "You won!";
       } else {
         newState.message = "incorrect";
       }
@@ -39,6 +38,8 @@ class GameMessage extends Component {
     // change the display message based on the message state
     renderMessage = () => {
         switch (this.state.message) {
+        case "You won!":
+          return "You Won!";
         case "correct":
           return "You guessed correctly!";
         case "incorrect":
@@ -48,34 +49,10 @@ class GameMessage extends Component {
         }
     };
 
-    // add animation class when animateClass state updates
-    // animations from aniamte.css library
-    // https://daneden.github.io/animate.css/
-    addAnimation = () => {
-      switch (this.state.message) {
-        case "correct":
-          return "animated pulse";
-        case "incorrect":
-          return "animated wobble";
-        default:
-          return "";
-        }     
-    }
-
     render() {
         return(
           <li 
-            // if the state.aniamtion = true, add the class from animate.css to trigger the animation,
-            // also add the state.message as a class, which changes the color,
-            // if aniamtion.state = false, remove the aniamte.css class and add the '.black' class
-            className={` 
-              gameMessage 
-              ${this.state.animating? this.addAnimation(): ""}  
-              ${this.state.animating? this.state.message: "black"}
-            `}
             id={`${this.state.message}`}
-            // set the animation state back to false after the classes are added
-            onAnimationEnd={() => this.setState({ animating: false })} 
           >
             {this.renderMessage()}
           </li>  

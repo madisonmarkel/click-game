@@ -7,10 +7,6 @@
     border-radius: 5px;
 }
 
-.gameCard:hover {
-    border: 4px solid darkslategrey;
-}
-
 @media (max-width: 750px) {
 
     .gameCard {

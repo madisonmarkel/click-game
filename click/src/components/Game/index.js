@@ -3,7 +3,6 @@ import Container from "../Container";
 import GameCard from "../GameCard";
 import Instructions from "../Instructions";
 import Header from "../Header";
-import Footer from "../Footer";
 import data from "../../data";
 
 
@@ -13,7 +12,6 @@ class Game extends Component {
         data,
         score: 0,
         topScore: 0,
-        message: "Click as many images as you can without repeating"
     };
 
     // function gets called when the page loads
@@ -46,7 +44,6 @@ class Game extends Component {
             data: this.shuffleDeck(newData),
             score: newScore,
             topScore: newTopScore,
-            animation: "animated swing"
         })
     }
 
@@ -79,18 +76,17 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="animated fadeIn">
+            <div className="fadeIn">
                 <Header score={this.state.score} topScore = {this.state.topScore} />
                 <Instructions message={this.state.message} />
                 <Container>
                     {
                         this.state.data.map(item => (
-                            <div className="animated rollIn">
+                            <div className="rollIn">
                                 <GameCard
                                     key={item.id}
                                     id={item.id} 
                                     image={item.image}
-                                    animate={!this.state.score && this.state.topScore}
                                     clicked={item.clicked}
                                     handleClick={this.gameCardClick}
                                 />      
@@ -98,7 +94,6 @@ class Game extends Component {
                         ))
                     }
                 </Container>
-                <Footer />
             </div>
         );
     }
