@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/click-game/precache-manifest.6778d6f7df22684966b4998b02764ea6.js"
+=======
+  "/precache-manifest.99f9bb62f640105cc9cd76688ba77a8f.js"
+>>>>>>> c3cc19af4018a4f8676296bd9ed7e5f118c8623d
 );
 
 workbox.clientsClaim();
@@ -28,7 +32,11 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
+<<<<<<< HEAD
 workbox.routing.registerNavigationRoute("/click-game/index.html", {
+=======
+workbox.routing.registerNavigationRoute("/index.html", {
+>>>>>>> c3cc19af4018a4f8676296bd9ed7e5f118c8623d
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

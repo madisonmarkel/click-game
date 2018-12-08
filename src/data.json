@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "image": "assets/images/basquiat.jpg",
+      "clicked": false,
+      "alt": "basquait"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/cezanne.jpg",
+      "clicked": false,
+      "alt": "cezanne"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/da-vinci.jpg",
+      "clicked": false,
+      "alt": "da-vinci"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/Frida.jpg",
+      "clicked": false,
+      "alt": "Frida"
+    },
+    {
+      "id": 5,
+      "image": "assets/images/georgia-okeeffe.jpg",
+      "clicked": false,
+      "alt": "georgia-okeeffe"
+    },
+    {
+      "id": 6,
+      "image": "assets/images/Klimt.jpg",
+      "clicked": false,
+      "alt": "Klimt"
+    },
+    {
+      "id": 7,
+      "image": "assets/images/modigliani.jpg",
+      "clicked": false,
+      "alt": "modigiliani"
+    },
+    {
+      "id": 8,
+      "image": "assets/images/Picasso.jpg",
+      "clicked": false,
+      "alt": "Picasso"
+    },
+    {
+      "id": 9,
+      "image": "assets/images/rembrandt.jpg",
+      "clicked": false,
+      "alt": "rembrandt"
+    },
+    {
+      "id": 10,
+      "image": "assets/images/salvador.jpg",
+      "clicked": false,
+      "alt": "salvador"
+    },
+    {
+      "id": 11,
+      "image": "assets/images/vincent.jpg",
+      "clicked": false,
+      "alt": "vincent"
+    },
+    {
+      "id": 12,
+      "image": "assets/images/warhol.jpg",
+      "clicked": false,
+      "alt": "warhol"
+    }
+  ]
