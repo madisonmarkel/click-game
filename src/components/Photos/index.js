@@ -10,7 +10,7 @@ const Photos = props => (
         role="img"
         aria-label="click item"
         className={`gameCard`} 
-        style={{ backgroundImage: `url("/${props.image}")`}}
+        style={{ backgroundImage: `url("/click-game/${props.image}")`}}
         onClick={() => props.handleClick(props.id)}
     /> 
 );
