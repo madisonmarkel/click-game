@@ -1,13 +1,17 @@
 import React, {Component} from "react";
-import "./GameMessage.css";
+import "./Status.css";
 
-class GameMessage extends Component {
+// STATEFUL 
+
+class Status extends Component {
 
     state = {
         message: ""
     }
 
     // function runs on every state change
+    // prevProps = props are header components that is equal to state
+    // you can access parents states
     componentDidUpdate(prevProps) {
 
       // will be passed into setState function
@@ -60,4 +64,4 @@ class GameMessage extends Component {
     }
 }
 
-export default GameMessage;
+export default Status;

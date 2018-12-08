@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import Container from "../Container";
-import GameCard from "../GameCard";
+import Photos from "../Photos";
 import Header from "../Header";
 import data from "../../data";
 
+// STATEFUL
 
+//allows you to access all functions that comes with react components for stateful components
 class Game extends Component {
 
     state = {
@@ -82,7 +84,7 @@ class Game extends Component {
                     {
                         this.state.data.map(item => (
                             <div>
-                                <GameCard
+                                <Photos
                                     key={item.id}
                                     id={item.id} 
                                     image={item.image}
